@@ -75,13 +75,15 @@
             app:cardCornerRadius="40dp"
             android:backgroundTint="@color/white">
 
-            <TextView
-                android:layout_margin="10dp"
+            <EditText
+                android:id="@+id/etusername"
+                android:layout_margin="1dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Masukkan username Anda"
-                android:textSize="8pt"
-                android:textColor="@color/light_gray"/>
+                android:inputType="text"
+                android:hint="Masukkan username Anda"
+                android:textSize="7pt"
+                android:textColor="@color/light_gray" />
 
         </androidx.cardview.widget.CardView>
 
@@ -102,17 +104,20 @@
             app:cardCornerRadius="40dp"
             android:backgroundTint="@color/white">
 
-            <TextView
-                android:layout_margin="10dp"
+            <EditText
+                android:id="@+id/etpass"
+                android:layout_margin="1dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Masukkan password Anda"
-                android:textSize="8pt"
+                android:inputType="textPassword"
+                android:hint="Masukkan password Anda"
+                android:textSize="7pt"
                 android:textColor="@color/light_gray"/>
 
         </androidx.cardview.widget.CardView>
 
         <TextView
+            android:id="@+id/LupaPass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
@@ -133,14 +138,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="32dp">
 
-        <TextView
+        <android.widget.Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/btnLogin"
             android:text="LOGIN"
             android:fontFamily="@font/redhatdisplay_regular"
             android:textStyle="bold"
             android:textSize="12pt"
             android:textColor="@color/white"
+            android:background="@color/pink"
             android:layout_marginStart="18dp"
             android:layout_marginEnd="18dp"
             android:layout_marginTop="8dp"
@@ -148,7 +155,8 @@
 
     </androidx.cardview.widget.CardView>
 
-    <TextView
+    <android.widget.Button
+        android:id="@+id/btnNoAkun"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Belum punya akun?"

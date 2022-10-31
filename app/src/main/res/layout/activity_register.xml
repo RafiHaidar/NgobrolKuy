@@ -49,11 +49,13 @@
             app:cardCornerRadius="40dp"
             android:backgroundTint="@color/white">
 
-            <TextView
-                android:layout_margin="10dp"
+            <EditText
+                android:id="@+id/etusernamereg"
+                android:layout_margin="1dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Masukkan username Anda"
+                android:inputType="text"
+                android:hint="Masukkan username Anda"
                 android:textSize="8pt"
                 android:textColor="@color/light_gray"/>
 
@@ -76,11 +78,13 @@
             app:cardCornerRadius="40dp"
             android:backgroundTint="@color/white">
 
-            <TextView
-                android:layout_margin="10dp"
+            <EditText
+                android:id="@+id/etemailreg"
+                android:layout_margin="1dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Masukkan email Anda"
+                android:inputType="textEmailAddress"
+                android:hint="Masukkan email Anda"
                 android:textSize="8pt"
                 android:textColor="@color/light_gray"/>
 
@@ -103,11 +107,13 @@
             app:cardCornerRadius="40dp"
             android:backgroundTint="@color/white">
 
-            <TextView
-                android:layout_margin="10dp"
+            <EditText
+                android:id="@+id/etpassreg"
+                android:layout_margin="1dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Masukkan password Anda"
+                android:inputType="textPassword"
+                android:hint="Masukkan password Anda"
                 android:textSize="8pt"
                 android:textColor="@color/light_gray"/>
 
@@ -130,11 +136,13 @@
             app:cardCornerRadius="40dp"
             android:backgroundTint="@color/white">
 
-            <TextView
-                android:layout_margin="10dp"
+            <EditText
+                android:id="@+id/etconfirmpassreg"
+                android:layout_margin="1dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Masukkan lagi password Anda"
+                android:inputType="textPassword"
+                android:hint="Masukkan lagi password Anda"
                 android:textSize="8pt"
                 android:textColor="@color/light_gray"/>
 
@@ -152,14 +160,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="32dp">
 
-        <TextView
+        <android.widget.Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/btnRegister"
             android:text="REGISTER"
             android:fontFamily="@font/redhatdisplay_regular"
             android:textStyle="bold"
-            android:textSize="12pt"
+            android:textSize="8pt"
             android:textColor="@color/white"
+            android:background="@color/pink"
             android:layout_marginStart="18dp"
             android:layout_marginEnd="18dp"
             android:layout_marginTop="8dp"
@@ -167,13 +177,14 @@
 
     </androidx.cardview.widget.CardView>
 
-    <TextView
+    <android.widget.Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sudah punya akun?"
+        android:id="@+id/btnAdaAkun"
         android:fontFamily="@font/redhatdisplay_regular"
         android:textStyle="bold"
-        android:textSize="12pt"
+        android:textSize="8pt"
         android:textColor="@color/white"
         android:layout_margin="32dp"
         android:background="@drawable/rounded_outline"
